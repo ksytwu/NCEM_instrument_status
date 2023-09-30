@@ -20,6 +20,7 @@
 	height: 40px;
 	text-align:center;
 	padding-top:10px;
+	font-weight: bold;
 	display:none;
     background: linear-gradient(270deg, #ffb3c6, #ff8fab, #fb6f92, #ff0a54);
     background-size: 800% 800%;
@@ -27,6 +28,19 @@
     -webkit-animation: closed-bg 8s ease infinite;
     animation: closed-bg 8s ease infinite;
 }
+
+/*https://www.gradient-animator.com/*/
+@-webkit-keyframes closed-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes closed-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 #loading {
 	width: 100%;
 	background-color: #fff7de;
@@ -85,15 +99,4 @@
 
     -webkit-animation: closed-bg 8s ease infinite;
     animation: closed-bg 8s ease infinite;
-}
-
-@-webkit-keyframes closed-bg {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes closed-bg {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
