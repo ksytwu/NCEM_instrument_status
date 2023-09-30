@@ -50,14 +50,13 @@ $(document).ready(function() {
 				}
 			}
 			if (data.values[1][4] == 0){
+				$("#cleanroomStatusClosed").html('Clean room is CLOSED');
 				if (data.values[1][8]) {
-					$("#cleanroomStatusClosed").append('Clean room is CLOSED. '+data.values[1][8]);
-				}else{
-					$("#cleanroomStatusClosed").append('Clean room is CLOSED');
-				}
-				
+					$("#cleanroomStatusClosed").append('. '+data.values[1][8]);
+				}				
 				$("#cleanroomStatusClosed").show()
 				$(".equipmentChip").css("background-color","gray")
+				$(".fa-regular, .fa-solid").css("color","gray")
 			}
 		}).done(function() {
 			$("#loading").slideUp('slow');
