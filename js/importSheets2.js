@@ -50,7 +50,12 @@ $(document).ready(function() {
 				}
 			}
 			if (data.values[1][4] == 0){
-				$("#cleanroomStatusClosed").append(' '+data.values[1][8]);
+				if (data.values[1][8]) {
+					$("#cleanroomStatusClosed").append('Clean room is CLOSED. '+data.values[1][8]);
+				}else{
+					$("#cleanroomStatusClosed").append('Clean room is CLOSED');
+				}
+				
 				$("#cleanroomStatusClosed").show()
 				$(".equipmentChip").css("background-color","gray")
 			}
