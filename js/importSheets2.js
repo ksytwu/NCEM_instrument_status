@@ -66,6 +66,6 @@ $(document).ready(function() {
 		$(document).on('click', 'a.closeButton', function() {
 			$(this).parents("tr").toggleClass("noteRed");
 			$(this).parents("tr").next().toggle();
-			console.log('click');
+			//console.log('click');
 		});
 	});		
