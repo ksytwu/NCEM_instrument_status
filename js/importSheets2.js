@@ -68,7 +68,4 @@ $(document).ready(function() {
 			$(this).parents("tr").next().toggle();
 			console.log('click');
 		});
-		setTimeout(function(){
-		   window.location.reload(1);
-		}, 600000);
 	});		
