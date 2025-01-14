@@ -1,0 +1,122 @@
+/*.loaderChip {
+	background-position: center;
+	background-image: url("loading.gif");
+	background-repeat: no-repeat;
+	background-size:cover;
+	height:30px;
+	width:30px;
+	display:inline-block;
+}*/
+
+#tableDiv, #cleanroomStatus {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+}
+.table {
+	margin: 0;
+}
+#cleanroomStatusClosed {
+	height: 40px;
+	text-align:center;
+	padding-top:10px;
+	font-weight: bold;
+	display:none;
+    background: linear-gradient(270deg, #ffb3c6, #ff8fab, #fb6f92, #ff0a54);
+    background-size: 800% 800%;
+
+    -webkit-animation: closed-bg 8s ease infinite;
+    animation: closed-bg 8s ease infinite;
+}
+
+#generalAnnouncements {
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	text-align:center;
+	padding-top:10px;
+	font-weight: bold;
+	display:none;
+	background: #ff8fab;
+	max-width: 900px;
+}
+
+/*https://www.gradient-animator.com/*/
+@-webkit-keyframes closed-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes closed-bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#loading {
+	width: 100%;
+	background-color: #fff7de;
+	text-align:center;
+}
+.equipmentChip {
+	 color:#FFF;
+	 align-items: center;
+	     border-radius: 0.5rem;
+	     display: -ms-inline-flexbox;
+	     display: inline-flex;
+	     font-size: 90%;
+	     height: 1.3rem;
+	     line-height: 0.8rem;
+	     margin: 0.1rem;
+	     max-width: 400px;
+	     overflow: hidden;
+	     padding: 0.2rem 0.4rem;
+	     text-decoration: none;
+	     text-overflow: ellipsis;
+	     vertical-align: middle;
+	     white-space: nowrap;
+}
+
+.status-1 {
+	background-color:#32b643;
+	font-weight: bold;
+}
+.status-2 {
+	background-color:#FBBC05;
+	font-weight: bold;
+}
+.status-0 {
+	background-color:#e85600;
+	font-weight: bold;
+}
+.status-3 {
+	background-color:#bbbbbb;
+	font-weight: bold;
+}
+.td-center {
+	text-align:center;
+}
+.iconMargin {
+	margin-left: 5px;
+}
+.tdNote {
+	background-color:#fffdf5;
+	font-style: italic;
+	padding-left: 20px !important;
+	font-size: 0.9rem;
+}
+.noteRed {
+	background-color:#fff7de;
+}
+.noteTr {
+	display:none;
+	/*display:table-row; */
+}
+
+#animatedBg {
+    background: linear-gradient(270deg, #ffb3c6, #ff8fab, #fb6f92, #ff0a54);
+    background-size: 800% 800%;
+
+    -webkit-animation: closed-bg 8s ease infinite;
+    animation: closed-bg 8s ease infinite;
+}
